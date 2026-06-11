@@ -4,27 +4,21 @@
 
 [🇪🇸 **Versión en Español**](README.md) &nbsp;·&nbsp; 🇺🇸 **English**
 
-<br/>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7AA2F7&center=true&vCenter=true&width=650&lines=Jr.+Full-Stack+Developer+%40+Tecnoinform%C3%A1tica+%F0%9F%92%BC;CMO+%26+Co-founder+%40+Severapp+%F0%9F%8F%86;Systems+Engineering+Student+%40+UPB+%F0%9F%8E%93;TypeScript+%E2%80%A2+Laravel+%E2%80%A2+Vue+%E2%80%A2+React+%E2%80%A2+Flutter+%E2%80%A2+Java;Code+%2B+Product+%2B+Visuals+%F0%9F%9A%80)](https://github.com/Dabji)
-
-<br/>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7AA2F7&center=true&vCenter=true&width=720&lines=Jr.+Full-Stack+Developer+%40+Tecnoinform%C3%A1tica+%F0%9F%92%BC;CMO+%26+Co-founder+%40+Severapp+%F0%9F%8F%86;Systems+Engineering+Student+%40+UPB+%F0%9F%8E%93;TypeScript+%E2%80%A2+Laravel+%E2%80%A2+Vue+%E2%80%A2+React+%E2%80%A2+Flutter+%E2%80%A2+Java;Code+%2B+Product+%2B+Visuals+%F0%9F%9A%80)](https://github.com/Dabji)
 
 <a href="https://www.linkedin.com/in/juanordo%C3%B1ezf"><img src="https://skillicons.dev/icons?i=linkedin" width="48" title="LinkedIn — Juan David Ordóñez Ferreira" alt="LinkedIn" /></a>
-&nbsp;&nbsp;
+&nbsp;
 <a href="mailto:juanordo1403@gmail.com"><img src="https://skillicons.dev/icons?i=gmail" width="48" title="juanordo1403@gmail.com" alt="Gmail" /></a>
-&nbsp;&nbsp;
+&nbsp;
 <a href="https://www.instagram.com/why_ordoo/"><img src="https://skillicons.dev/icons?i=instagram" width="48" title="Instagram — @why_ordoo" alt="Instagram" /></a>
-&nbsp;&nbsp;
+&nbsp;
+<a href="https://www.youtube.com/@dabjiX"><img src="assets/youtube.png" width="48" title="YouTube — @dabjiX" alt="YouTube" /></a>
+&nbsp;
 <img src="https://skillicons.dev/icons?i=discord" width="48" title="Discord — dabji." alt="Discord: dabji." />
-
-<br/><br/>
 
 <img src="https://komarev.com/ghpvc/?username=Dabji&style=flat-square&color=bb9af7&labelColor=0d1117&label=Profile+views" height="24" />
 
 </div>
-
-<br/>
 
 ## 🚀 About Me
 
@@ -83,7 +77,9 @@ University marketplace — 🥇 **1st place at La Palanca (ApalancaFest)**, Buca
 </td>
 <td width="33%" valign="top" align="center">
 
-<br/>
+<img src="assets/lideres-upb.png" height="44" title="Líderes UPB" alt="Líderes UPB" />
+&nbsp;
+<img src="assets/misiones-upb.png" height="44" title="Misiones UPB" alt="Misiones UPB" />
 
 ### 🤝 Leadership & Creativity
 
@@ -179,7 +175,6 @@ Plus my audiovisual side:
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="42" title="Microsoft Azure" alt="Azure" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="42" title="Google Cloud Platform" alt="GCP" />&nbsp;
 <img src="https://skillicons.dev/icons?i=aws" width="42" title="AWS" alt="AWS" />&nbsp;
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="42" title="Linux" alt="Linux" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="42" title="Terraform" alt="Terraform" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" width="42" title="GitHub Actions" alt="GitHub Actions" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width="42" title="Nginx" alt="Nginx" />&nbsp;
@@ -206,6 +201,7 @@ Plus my audiovisual side:
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" width="42" title="IntelliJ IDEA" alt="IntelliJ" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="42" title="Bash / Terminal" alt="Bash" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powershell/powershell-original.svg" width="42" title="PowerShell" alt="PowerShell" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="42" title="Linux" alt="Linux" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows11/windows11-original.svg" width="42" title="Windows" alt="Windows" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" width="42" title="Notion" alt="Notion" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" width="42" title="Jira" alt="Jira" />&nbsp;
@@ -216,10 +212,7 @@ Plus my audiovisual side:
 <td align="right"><b>🎬 Design & Video</b></td>
 <td>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="42" title="Figma" alt="Figma" />&nbsp;
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/capcut-dark.png" />
-  <img src="assets/capcut-light.png" width="42" title="CapCut" alt="CapCut" />
-</picture>
+<img src="assets/capcut.png" width="42" title="CapCut" alt="CapCut" />
 </td>
 </tr>
 </table>
@@ -343,9 +336,9 @@ Plus my audiovisual side:
 &nbsp;&nbsp;
 <a href="https://www.instagram.com/why_ordoo/"><img src="https://skillicons.dev/icons?i=instagram" width="52" title="Instagram — @why_ordoo" alt="Instagram" /></a>
 &nbsp;&nbsp;
+<a href="https://www.youtube.com/@dabjiX"><img src="assets/youtube.png" width="52" title="YouTube — @dabjiX" alt="YouTube" /></a>
+&nbsp;&nbsp;
 <img src="https://skillicons.dev/icons?i=discord" width="52" title="Discord — dabji." alt="Discord: dabji." />
-
-<br/><br/>
 
 <table>
 <tr>
