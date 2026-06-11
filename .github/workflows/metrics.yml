@@ -1,0 +1,49 @@
+name: 📊 Métricas avanzadas del perfil
+
+on:
+  schedule:
+    # Todos los días a las 06:00 UTC (1:00 AM Colombia)
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Generar metrics.svg
+        uses: lowlighter/metrics@latest
+        with:
+          # Requiere el secret METRICS_TOKEN (PAT classic con scopes: repo, read:user)
+          # para incluir estadísticas de repositorios PRIVADOS.
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Dabji
+          template: classic
+          filename: metrics.svg
+          committer_branch: main
+          config_timezone: America/Bogota
+          config_display: large
+
+          # Secciones base
+          base: header, activity, community, repositories, metadata
+
+          # Lenguajes más usados (incluye repos privados gracias al PAT)
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_details: percentage, bytes-size
+          plugin_languages_indepth: yes
+          plugin_languages_ignored: jupyter notebook, html
+
+          # Hábitos de commits (horarios y días más activos)
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_days: 30
+
+          # Calendario isométrico de contribuciones
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
