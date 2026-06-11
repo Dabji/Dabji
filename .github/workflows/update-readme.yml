@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generar actividad reciente y proyectos por estrellas
+      - name: Generar actividad reciente y proyectos por estrellas (ES + EN)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -39,100 +39,119 @@ jobs:
               with urllib.request.urlopen(req) as r:
                   return json.load(r)
 
-          def hace(iso):
+          def hace(iso, lang):
               dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
-              delta = datetime.now(timezone.utc) - dt
-              if delta.days >= 30: return f"hace {delta.days // 30} mes(es)"
-              if delta.days >= 1:  return f"hace {delta.days} día(s)"
-              h = delta.seconds // 3600
-              return f"hace {h} hora(s)" if h else "hace minutos"
+              d = datetime.now(timezone.utc) - dt
+              if lang == "es":
+                  if d.days >= 30: return f"hace {d.days // 30} mes(es)"
+                  if d.days >= 1:  return f"hace {d.days} día(s)"
+                  h = d.seconds // 3600
+                  return f"hace {h} hora(s)" if h else "hace minutos"
+              if d.days >= 30: return f"{d.days // 30} month(s) ago"
+              if d.days >= 1:  return f"{d.days} day(s) ago"
+              h = d.seconds // 3600
+              return f"{h} hour(s) ago" if h else "minutes ago"
 
-          # ── Actividad reciente ─────────────────────────────────────────
+          T = {
+              "es": {"push": "Hizo push de **{n} commit{s}** en", "merge": "Mergeó el PR",
+                     "openpr": "Abrió el PR", "openissue": "Abrió el issue", "closeissue": "Cerró el issue",
+                     "repo": "Creó el repositorio", "release": "Publicó la release", "star": "Le dio una estrella a",
+                     "fork": "Hizo fork de", "public": "Hizo público", "en": " en",
+                     "header": "| | 🔥 Últimos movimientos | |", "empty": "_Sin actividad pública reciente_",
+                     "sub": "Actualizado automáticamente cada 3 días"},
+              "en": {"push": "Pushed **{n} commit{s}** to", "merge": "Merged PR",
+                     "openpr": "Opened PR", "openissue": "Opened issue", "closeissue": "Closed issue",
+                     "repo": "Created repository", "release": "Published release", "star": "Starred",
+                     "fork": "Forked", "public": "Made public", "en": " in",
+                     "header": "| | 🔥 Latest moves | |", "empty": "_No recent public activity_",
+                     "sub": "Automatically updated every 3 days"},
+          }
+
           eventos = api(f"/users/{USER}/events/public?per_page=60")
-          filas, vistos = [], set()
-          for e in eventos:
-              repo = e["repo"]["name"]
-              url = f"https://github.com/{repo}"
-              t, p = e["type"], e["payload"]
-              if t == "PushEvent":
-                  n = len(p.get("commits", []))
-                  if not n: continue
-                  txt = (f"⚡", f"Hizo push de **{n} commit{'s' if n > 1 else ''}** en [`{repo}`]({url})")
-              elif t == "PullRequestEvent":
-                  pr = p["pull_request"]
-                  if p["action"] == "closed" and pr.get("merged"):
-                      txt = ("🎉", f"Mergeó el PR [#{pr['number']}]({pr['html_url']}) en [`{repo}`]({url})")
-                  elif p["action"] == "opened":
-                      txt = ("🔀", f"Abrió el PR [#{pr['number']}]({pr['html_url']}) en [`{repo}`]({url})")
-                  else: continue
-              elif t == "IssuesEvent" and p["action"] in ("opened", "closed"):
-                  emoji = "🐛" if p["action"] == "opened" else "✅"
-                  verbo = "Abrió" if p["action"] == "opened" else "Cerró"
-                  txt = (emoji, f"{verbo} el issue [#{p['issue']['number']}]({p['issue']['html_url']}) en [`{repo}`]({url})")
-              elif t == "CreateEvent" and p.get("ref_type") == "repository":
-                  txt = ("🚀", f"Creó el repositorio [`{repo}`]({url})")
-              elif t == "ReleaseEvent" and p["action"] == "published":
-                  txt = ("📦", f"Publicó la release [{p['release']['tag_name']}]({p['release']['html_url']}) en [`{repo}`]({url})")
-              elif t == "WatchEvent":
-                  txt = ("⭐", f"Le dio una estrella a [`{repo}`]({url})")
-              elif t == "ForkEvent":
-                  txt = ("🍴", f"Hizo fork de [`{repo}`]({url})")
-              elif t == "PublicEvent":
-                  txt = ("🌍", f"Hizo público [`{repo}`]({url})")
-              else:
-                  continue
-              clave = (txt[1],)
-              if clave in vistos: continue
-              vistos.add(clave)
-              filas.append(f"| {txt[0]} | {txt[1]} | 🕓 *{hace(e['created_at'])}* |")
-              if len(filas) >= 8: break
 
-          actividad = "\n".join([
-              '<div align="center">', "",
-              "| | 🔥 Últimos movimientos | |",
-              "|:---:|:----------------------|:---:|",
-              *filas, "", "</div>",
-          ]) if filas else "_Sin actividad pública reciente_"
+          def actividad(lang):
+              t = T[lang]
+              filas, vistos = [], set()
+              for e in eventos:
+                  repo = e["repo"]["name"]
+                  url = f"https://github.com/{repo}"
+                  ty, p = e["type"], e["payload"]
+                  if ty == "PushEvent":
+                      n = len(p.get("commits", []))
+                      if not n: continue
+                      linea = ("⚡", t["push"].format(n=n, s="s" if n > 1 else "") + f" [`{repo}`]({url})")
+                  elif ty == "PullRequestEvent":
+                      pr = p["pull_request"]
+                      if p["action"] == "closed" and pr.get("merged"):
+                          linea = ("🎉", f"{t['merge']} [#{pr['number']}]({pr['html_url']}){t['en']} [`{repo}`]({url})")
+                      elif p["action"] == "opened":
+                          linea = ("🔀", f"{t['openpr']} [#{pr['number']}]({pr['html_url']}){t['en']} [`{repo}`]({url})")
+                      else: continue
+                  elif ty == "IssuesEvent" and p["action"] in ("opened", "closed"):
+                      k = "openissue" if p["action"] == "opened" else "closeissue"
+                      emoji = "🐛" if p["action"] == "opened" else "✅"
+                      linea = (emoji, f"{t[k]} [#{p['issue']['number']}]({p['issue']['html_url']}){t['en']} [`{repo}`]({url})")
+                  elif ty == "CreateEvent" and p.get("ref_type") == "repository":
+                      linea = ("🚀", f"{t['repo']} [`{repo}`]({url})")
+                  elif ty == "ReleaseEvent" and p["action"] == "published":
+                      linea = ("📦", f"{t['release']} [{p['release']['tag_name']}]({p['release']['html_url']}){t['en']} [`{repo}`]({url})")
+                  elif ty == "WatchEvent":
+                      linea = ("⭐", f"{t['star']} [`{repo}`]({url})")
+                  elif ty == "ForkEvent":
+                      linea = ("🍴", f"{t['fork']} [`{repo}`]({url})")
+                  elif ty == "PublicEvent":
+                      linea = ("🌍", f"{t['public']} [`{repo}`]({url})")
+                  else:
+                      continue
+                  if linea[1] in vistos: continue
+                  vistos.add(linea[1])
+                  filas.append(f"| {linea[0]} | {linea[1]} | 🕓 *{hace(e['created_at'], lang)}* |")
+                  if len(filas) >= 8: break
+              if not filas:
+                  return T[lang]["empty"]
+              return "\n".join(['<div align="center">', "", t["header"],
+                                "|:---:|:----------------------|:---:|", *filas, "", "</div>"])
 
-          # ── Proyectos por estrellas ────────────────────────────────────
           repos = api(f"/users/{USER}/repos?per_page=100&type=owner")
           repos = [r for r in repos if not r["fork"] and r["name"].lower() != USER.lower()]
           repos.sort(key=lambda r: r["pushed_at"], reverse=True)   # desempate: más activo primero
           repos.sort(key=lambda r: r["stargazers_count"], reverse=True)
           top = repos[:6]
 
-          def tarjeta(r):
-              pin = (f"https://github-readme-stats.vercel.app/api/pin/?username={USER}"
-                     f"&repo={r['name']}&theme=tokyonight&hide_border=true&bg_color=0d1117")
-              return (f'<td align="center" width="50%">\n'
-                      f'<a href="{r["html_url"]}">\n<img src="{pin}" />\n</a>\n</td>')
+          def proyectos(lang):
+              celdas = []
+              for r in top:
+                  pin = (f"https://github-readme-stats.vercel.app/api/pin/?username={USER}"
+                         f"&repo={r['name']}&theme=tokyonight&hide_border=true&bg_color=0d1117")
+                  celdas.append(f'<td align="center" width="50%">\n'
+                                f'<a href="{r["html_url"]}">\n<img src="{pin}" />\n</a>\n</td>')
+              tr = []
+              for i in range(0, len(celdas), 2):
+                  fila = celdas[i] if i + 1 >= len(celdas) else celdas[i] + "\n" + celdas[i + 1]
+                  tr.append(f"<tr>\n{fila}\n</tr>")
+              return "\n".join(['<div align="center">', "",
+                                f"<sub>🔄 {T[lang]['sub']}</sub>", "",
+                                "<table>", *tr, "</table>", "", "</div>"])
 
-          celdas = [tarjeta(r) for r in top]
-          tr = []
-          for i in range(0, len(celdas), 2):
-              fila = celdas[i] if i + 1 >= len(celdas) else celdas[i] + "\n" + celdas[i + 1]
-              tr.append(f"<tr>\n{fila}\n</tr>")
-          proyectos = "\n".join([
-              '<div align="center">', "",
-              "<sub>⭐ Ordenados automáticamente por estrellas y actividad — actualizado cada 3 días</sub>",
-              "", "<table>", *tr, "</table>", "", "</div>",
-          ])
+          def inyectar(archivo, lang):
+              if not os.path.exists(archivo): return
+              with open(archivo, encoding="utf-8") as f:
+                  md = f.read()
+              md = re.sub(r"(<!--START_SECTION:activity-->).*?(<!--END_SECTION:activity-->)",
+                          rf"\1\n{actividad(lang)}\n\2", md, flags=re.S)
+              md = re.sub(r"(<!--START_SECTION:projects-->).*?(<!--END_SECTION:projects-->)",
+                          rf"\1\n{proyectos(lang)}\n\2", md, flags=re.S)
+              with open(archivo, "w", encoding="utf-8") as f:
+                  f.write(md)
+              print(f"{archivo} actualizado ({lang})")
 
-          # ── Inyectar en el README ──────────────────────────────────────
-          with open("README.md", encoding="utf-8") as f:
-              md = f.read()
-          md = re.sub(r"(<!--START_SECTION:activity-->).*?(<!--END_SECTION:activity-->)",
-                      rf"\1\n{actividad}\n\2", md, flags=re.S)
-          md = re.sub(r"(<!--START_SECTION:projects-->).*?(<!--END_SECTION:projects-->)",
-                      rf"\1\n{proyectos}\n\2", md, flags=re.S)
-          with open("README.md", "w", encoding="utf-8") as f:
-              f.write(md)
-          print(f"Actividad: {len(filas)} eventos · Proyectos: {len(top)}")
+          inyectar("README.md", "es")
+          inyectar("README.en.md", "en")
           EOF
 
       - name: Commit y push si hay cambios
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md
+          git add README.md README.en.md
           git diff --staged --quiet || (git commit -m "🔄 Auto-update: actividad reciente y proyectos destacados" && git push)

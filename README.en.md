@@ -2,11 +2,11 @@
 
 <div align="center">
 
-🇪🇸 **Español** &nbsp;·&nbsp; [🇺🇸 **English Version**](README.en.md)
+[🇪🇸 **Versión en Español**](README.md) &nbsp;·&nbsp; 🇺🇸 **English**
 
 <br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7AA2F7&center=true&vCenter=true&width=650&lines=Full-Stack+Developer+Jr.+%40+Tecnoinform%C3%A1tica+%F0%9F%92%BC;CMO+%26+Co-fundador+%40+Severapp+%F0%9F%8F%86;Est.+Ing.+de+Sistemas+e+Inform%C3%A1tica+%40+UPB+%F0%9F%8E%93;TypeScript+%E2%80%A2+Laravel+%E2%80%A2+Vue+%E2%80%A2+React+%E2%80%A2+Flutter+%E2%80%A2+Java;C%C3%B3digo+%2B+Producto+%2B+Visuales+%F0%9F%9A%80)](https://github.com/Dabji)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7AA2F7&center=true&vCenter=true&width=650&lines=Jr.+Full-Stack+Developer+%40+Tecnoinform%C3%A1tica+%F0%9F%92%BC;CMO+%26+Co-founder+%40+Severapp+%F0%9F%8F%86;Systems+Engineering+Student+%40+UPB+%F0%9F%8E%93;TypeScript+%E2%80%A2+Laravel+%E2%80%A2+Vue+%E2%80%A2+React+%E2%80%A2+Flutter+%E2%80%A2+Java;Code+%2B+Product+%2B+Visuals+%F0%9F%9A%80)](https://github.com/Dabji)
 
 <br/>
 
@@ -20,23 +20,23 @@
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=Dabji&style=flat-square&color=bb9af7&labelColor=0d1117&label=Visitas+al+perfil" height="24" />
+<img src="https://komarev.com/ghpvc/?username=Dabji&style=flat-square&color=bb9af7&labelColor=0d1117&label=Profile+views" height="24" />
 
 </div>
 
 <br/>
 
-## 🚀 Sobre mí
+## 🚀 About Me
 
-<img align="right" src="assets/sonic.gif" width="240" alt="Sonic corriendo por Green Hill Zone" />
+<img align="right" src="assets/sonic.gif" width="240" alt="Sonic running through Green Hill Zone" />
 
-**Ingeniero en formación, desarrollador en ejercicio y creativo por naturaleza.**
+**Engineer in training, developer in practice, and creative by nature.**
 
-Estudio **Ingeniería de Sistemas e Informática** en la **UPB** mientras trabajo en la
-industria real: software empresarial y financiero de día, una startup ganadora por las
-tardes, y edición de video cuando el editor de código descansa.
+I study **Systems Engineering & Computer Science** at **UPB** while working in the real
+industry: enterprise and financial software by day, an award-winning startup in the
+afternoons, and video editing whenever the code editor takes a break.
 
-Mi tesis personal: *un buen ingeniero entiende el producto tanto como el código.*
+My personal thesis: *a good engineer understands the product as deeply as the code.*
 
 <br clear="right"/>
 
@@ -51,14 +51,14 @@ Mi tesis personal: *un buen ingeniero entiende el producto tanto como el código
 </picture>
 </a>
 
-### 💼 Ingeniería
+### 💼 Engineering
 
-**Full-Stack Jr. @ [Tecnoinformática](https://github.com/tecnoinformaticaCO/)**
+**Jr. Full-Stack @ [Tecnoinformática](https://github.com/tecnoinformaticaCO/)**
 
-Casa de software empresarial y financiera. Entré como practicante y me quedé en el equipo de planta construyendo plataformas para fondos de empleados y cooperativas.
+Enterprise & financial software house. I joined as an intern and earned a permanent spot on the team, building platforms for employee funds and cooperatives.
 
 `Laravel` `Vue.js` `Scrum`
-`CI/CD con GitHub Actions`
+`CI/CD with GitHub Actions`
 
 </td>
 <td width="33%" valign="top" align="center">
@@ -71,46 +71,46 @@ Casa de software empresarial y financiera. Entré como practicante y me quedé e
 
 <br/>
 
-### 📈 Producto & Marketing
+### 📈 Product & Marketing
 
-**CMO & Co-fundador @ [Severapp](https://severapp.com)**
+**CMO & Co-founder @ [Severapp](https://severapp.com)**
 
-Marketplace universitario — 🥇 **1er lugar en La Palanca (ApalancaFest)**, Cámara de Comercio de Bucaramanga. Lidero growth, alianzas y eventos, y programo en la app.
+University marketplace — 🥇 **1st place at La Palanca (ApalancaFest)**, Bucaramanga Chamber of Commerce. I lead growth, partnerships and events — and also code on the app.
 
 `Flutter` `Dart` `Firebase`
-`Growth` `Alianzas` `Eventos`
+`Growth` `Partnerships` `Events`
 
 </td>
 <td width="33%" valign="top" align="center">
 
 <br/>
 
-### 🤝 Liderazgo & Creatividad
+### 🤝 Leadership & Creativity
 
-**[Líderes UPB](https://www.upb.edu.co)** — programa de desarrollo integral: habilidades blandas, oratoria y gestión de equipos universitarios.
+**[Líderes UPB](https://www.upb.edu.co)** — holistic development program: soft skills, public speaking and university team management.
 
-**Misiones UPB** — voluntariado de impacto social y transformación comunitaria: salir al encuentro del otro.
+**Misiones UPB** — social-impact volunteering and community transformation: going out to meet others.
 
-Y mi lado audiovisual:
+Plus my audiovisual side:
 
-`Edición de video` `CapCut`
-`UX con Figma` `Community Mgmt`
+`Video editing` `CapCut`
+`UX with Figma` `Community Mgmt`
 
 </td>
 </tr>
 </table>
 
-> 💳 **Proyecto del momento:** el [Simulador de Crédito UPB](https://github.com/Dabji/Simulador-Credito-UPB) — simulador de crédito educativo construido con **Clean Architecture y API RESTful** (React 19 + Node.js + TypeScript), pensado para escalar en el entorno real de la universidad y desplegado con **Nginx, PM2 y RHEL** en infraestructura del CTIC.
+> 💳 **Current flagship project:** the [UPB Credit Simulator](https://github.com/Dabji/Simulador-Credito-UPB) — an educational credit simulator built with **Clean Architecture and a RESTful API** (React 19 + Node.js + TypeScript), designed to scale in the university's real environment and deployed with **Nginx, PM2 and RHEL** on CTIC infrastructure.
 
 ---
 
-## 🛠️ Stack Tecnológico
+## 🛠️ Tech Stack
 
 <div align="center">
 
 <table>
 <tr>
-<td align="right"><b>💻 Lenguajes</b></td>
+<td align="right"><b>💻 Languages</b></td>
 <td>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="42" title="TypeScript" alt="TypeScript" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="42" title="JavaScript" alt="JavaScript" />&nbsp;
@@ -145,11 +145,11 @@ Y mi lado audiovisual:
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="42" title="Spring Boot" alt="Spring Boot" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" width="42" title=".NET" alt=".NET" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" width="42" title="Swagger / REST API" alt="Swagger" />&nbsp;
-<img src="https://img.shields.io/badge/SOAP-XML-7aa2f7?style=for-the-badge&labelColor=0d1117" height="28" title="SOAP / Web Services XML" alt="SOAP" />
+<img src="https://img.shields.io/badge/SOAP-XML-7aa2f7?style=for-the-badge&labelColor=0d1117" height="28" title="SOAP / XML Web Services" alt="SOAP" />
 </td>
 </tr>
 <tr>
-<td align="right"><b>📱 Móvil</b></td>
+<td align="right"><b>📱 Mobile</b></td>
 <td>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="42" title="Flutter" alt="Flutter" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="42" title="Kotlin" alt="Kotlin" />&nbsp;
@@ -158,7 +158,7 @@ Y mi lado audiovisual:
 </td>
 </tr>
 <tr>
-<td align="right"><b>🗄️ Bases de Datos</b></td>
+<td align="right"><b>🗄️ Databases</b></td>
 <td>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="42" title="PostgreSQL" alt="PostgreSQL" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="42" title="MySQL" alt="MySQL" />&nbsp;
@@ -198,7 +198,7 @@ Y mi lado audiovisual:
 </td>
 </tr>
 <tr>
-<td align="right"><b>🧰 Herramientas & SO</b></td>
+<td align="right"><b>🧰 Tools & OS</b></td>
 <td>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="42" title="Visual Studio Code" alt="VS Code" />&nbsp;
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webstorm/webstorm-original.svg" width="42" title="WebStorm" alt="WebStorm" />&nbsp;
@@ -213,7 +213,7 @@ Y mi lado audiovisual:
 </td>
 </tr>
 <tr>
-<td align="right"><b>🎬 Diseño & Video</b></td>
+<td align="right"><b>🎬 Design & Video</b></td>
 <td>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="42" title="Figma" alt="Figma" />&nbsp;
 <picture>
@@ -228,59 +228,59 @@ Y mi lado audiovisual:
 
 ---
 
-## 📊 Estadísticas
+## 📊 Stats
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Dabji&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&count_private=true&include_all_commits=true&locale=es" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dabji&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&langs_count=8&locale=es" />
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=Dabji&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&count_private=true&include_all_commits=true" />
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Dabji&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&langs_count=8" />
 
-<img src="https://streak-stats.demolab.com?user=Dabji&theme=tokyonight&hide_border=true&background=0d1117&locale=es" />
+<img src="https://streak-stats.demolab.com?user=Dabji&theme=tokyonight&hide_border=true&background=0d1117" />
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Dabji&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=7aa2f7&line=bb9af7&point=c0caf5&area=true" width="95%" />
 
 </div>
 
-<!-- Métricas avanzadas generadas cada 3 días por GitHub Actions (lowlighter/metrics) -->
+<!-- Advanced metrics generated every 3 days by GitHub Actions (lowlighter/metrics) -->
 <div align="center">
-  <img src="metrics.svg" alt="Métricas detalladas" width="95%" />
+  <img src="metrics.svg" alt="Detailed metrics" width="95%" />
 </div>
 
 ---
 
-## ⚡ Actividad reciente
+## ⚡ Recent Activity
 
-<!-- Sección auto-generada cada 3 días por update-readme.yml — no editar a mano -->
+<!-- Auto-generated every 3 days by update-readme.yml — do not edit by hand -->
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
 
 ---
 
-## 📌 Proyectos Destacados
+## 📌 Featured Projects
 
-<!-- Sección auto-generada cada 3 días por update-readme.yml — no editar a mano -->
+<!-- Auto-generated every 3 days by update-readme.yml — do not edit by hand -->
 <!--START_SECTION:projects-->
 <!--END_SECTION:projects-->
 
 ---
 
-## 🦔 Contribuciones
+## 🦔 Contributions
 
 <div align="center">
 
-<sub>💍 Cada anillo dorado es una contribución. Gotta go fast.</sub>
+<sub>💍 Every golden ring is a contribution. Gotta go fast.</sub>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Dabji/Dabji/output/sonic-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Dabji/Dabji/output/sonic-light.svg" />
-  <img alt="Animación de contribuciones estilo Sonic" src="https://raw.githubusercontent.com/Dabji/Dabji/output/sonic-dark.svg" width="95%" />
+  <img alt="Sonic-style contribution animation" src="https://raw.githubusercontent.com/Dabji/Dabji/output/sonic-dark.svg" width="95%" />
 </picture>
 
 </div>
 
 ---
 
-## 📫 Conectemos
+## 📫 Let's Connect
 
 <div align="center">
 
@@ -296,18 +296,18 @@ Y mi lado audiovisual:
 
 <table>
 <tr>
-<td align="center" width="12%"><img src="assets/ring.gif" width="64" alt="Anillo de Sonic" /></td>
+<td align="center" width="12%"><img src="assets/ring.gif" width="64" alt="Sonic ring" /></td>
 <td align="center" width="76%">
 
-## *“Un buen ingeniero no solo sabe programar:<br/>entiende el producto, se comunica bien y sabe mostrar su valor.”*
+## *“A good engineer doesn't just write code:<br/>they understand the product, communicate well, and know how to show their value.”*
 
 **— Juan David Ordóñez Ferreira**
 
 </td>
-<td align="center" width="12%"><img src="assets/ring.gif" width="64" alt="Anillo de Sonic" /></td>
+<td align="center" width="12%"><img src="assets/ring.gif" width="64" alt="Sonic ring" /></td>
 </tr>
 </table>
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:7aa2f7,50:bb9af7,100:0d1117&section=footer&text=Gracias%20por%20la%20visita%20%F0%9F%91%8B&fontColor=c0caf5&fontSize=24&fontAlignY=75" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:7aa2f7,50:bb9af7,100:0d1117&section=footer&text=Thanks%20for%20stopping%20by%20%F0%9F%91%8B&fontColor=c0caf5&fontSize=24&fontAlignY=75" width="100%" />

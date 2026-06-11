@@ -45,11 +45,9 @@ jobs:
           plugin_languages_indepth: yes
           plugin_languages_ignored: jupyter notebook, html
 
-          # Hábitos de commits (horarios y días más activos)
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-          plugin_habits_days: 30
+          # Nota: el plugin de hábitos (plugin_habits) se eliminó porque la API de
+          # eventos de GitHub devolvía datos incompletos y rompía el SVG con
+          # "Recent coding habits - unexpected error".
 
           # Calendario isométrico de contribuciones
           plugin_isocalendar: yes
