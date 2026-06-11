@@ -2,12 +2,15 @@ name: 🐍 Generar Snake de contribuciones
 
 on:
   schedule:
-    # Todos los días a las 00:00 UTC (7:00 PM Colombia)
-    - cron: "0 0 * * *"
+    # Cada 3 días a las 05:00 UTC (00:00 Colombia) — cadencia óptima sin saturar la API
+    - cron: "0 5 */3 * *"
   workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
+    paths:
+      # Solo se re-ejecuta en push si cambia este workflow (evita cascadas
+      # cuando metrics.yml o el workflow de actividad commitean a main)
+      - ".github/workflows/snake.yml"
 
 permissions:
   contents: write

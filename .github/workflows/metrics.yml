@@ -2,9 +2,16 @@ name: 📊 Métricas avanzadas del perfil
 
 on:
   schedule:
-    # Todos los días a las 06:00 UTC (1:00 AM Colombia)
-    - cron: "0 6 * * *"
+    # Cada 3 días a las 05:30 UTC (00:30 Colombia), desfasado del snake
+    - cron: "30 5 */3 * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      # Validación automática cuando se modifica este workflow.
+      # El commit de metrics.svg (hecho con el PAT) NO re-dispara nada
+      # gracias a este filtro de paths.
+      - ".github/workflows/metrics.yml"
 
 permissions:
   contents: write
@@ -17,8 +24,8 @@ jobs:
       - name: Generar metrics.svg
         uses: lowlighter/metrics@latest
         with:
-          # Requiere el secret METRICS_TOKEN (PAT classic con scopes: repo, read:user)
-          # para incluir estadísticas de repositorios PRIVADOS.
+          # Secret METRICS_TOKEN: PAT classic con scopes repo + read:user
+          # (incluye estadísticas de repositorios privados)
           token: ${{ secrets.METRICS_TOKEN }}
           user: Dabji
           template: classic

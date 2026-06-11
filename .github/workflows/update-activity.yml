@@ -1,0 +1,32 @@
+name: ⚡ Actualizar actividad reciente
+
+on:
+  schedule:
+    # Cada 3 días a las 06:00 UTC (01:00 Colombia)
+    - cron: "0 6 */3 * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/update-activity.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update-activity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Insertar actividad reciente en el README
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          COMMIT_MSG: "⚡ Actualizar actividad reciente (bot)"
+          MAX_LINES: 8
+          COMMIT_NAME: github-actions[bot]
+          COMMIT_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          TARGET_FILE: README.md
