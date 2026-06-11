@@ -24,9 +24,9 @@ jobs:
       - name: Generar metrics.svg
         uses: lowlighter/metrics@latest
         with:
-          # Secret METRICS_TOKEN: PAT classic con scopes repo + read:user
+          # Secret METRICS_TOKENS: PAT classic con scopes repo + read:user
           # (incluye estadísticas de repositorios privados)
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.METRICS_TOKENS }}
           user: Dabji
           template: classic
           filename: metrics.svg

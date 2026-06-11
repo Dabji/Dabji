@@ -1,47 +1,68 @@
-<!-- ============================================================ -->
-<!--  BANNER PRINCIPAL                                            -->
-<!--  Cuando tengas el banner generado con Gemini                 -->
-<!--  (ver DISENO_BANNER_GEMINI.md), reemplaza este bloque por:   -->
-<!--  <img src="assets/banner.png" alt="Banner" width="100%" />   -->
-<!-- ============================================================ -->
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:0d1117,50:1a1b27,100:7aa2f7&text=Juan%20David%20Ordo%C3%B1ez%20Ferreira&fontColor=c0caf5&fontSize=44&fontAlignY=35&desc=Dabji%20%E2%80%A2%20Full-Stack%20Dev%20%E2%80%A2%20CMO%20%40%20Severapp&descAlignY=55&descSize=18&animation=fadeIn" width="100%" alt="banner" />
+<img src="assets/banner.jpg" alt="Juan David Ordóñez Ferreira — Full-Stack Developer · CMO @ Severapp · Video & Visuals" width="100%" />
 
 <div align="center">
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7AA2F7&center=true&vCenter=true&width=650&lines=Full-Stack+Developer+Jr.+%40+Tecnoinform%C3%A1tica+%F0%9F%92%BC;CMO+%26+Co-fundador+%40+Severapp+%F0%9F%8F%86;Est.+Ing.+de+Sistemas+e+Inform%C3%A1tica+%40+UPB+%F0%9F%8E%93;Laravel+%E2%80%A2+Vue+%E2%80%A2+React+%E2%80%A2+Flutter+%E2%80%A2+Java;C%C3%B3digo+%2B+Producto+%2B+Visuales+%F0%9F%9A%80)](https://github.com/Dabji)
 
-<a href="https://www.linkedin.com/in/juanordo%C3%B1ezf"><img src="https://img.shields.io/badge/LinkedIn-Juan%20David%20Ordo%C3%B1ez-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" /></a>
-<a href="mailto:juanordo1403@gmail.com"><img src="https://img.shields.io/badge/Gmail-Cont%C3%A1ctame-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" /></a>
 <img src="https://komarev.com/ghpvc/?username=Dabji&style=for-the-badge&color=7aa2f7&label=VISITAS" />
 
 </div>
 
----
+<br/>
 
 ## 🚀 Sobre mí
 
-```typescript
-const juan = {
-  nombre: "Juan David Ordóñez Ferreira",
-  alias: "Dabji",
-  ubicacion: "Floridablanca, Santander, Colombia 🇨🇴",
-  roles: {
-    empresa: "Full-Stack Developer Jr. @ Tecnoinformática (Laravel + Vue.js)",
-    startup: "CMO & Co-fundador @ Severapp 🏆 1er lugar — La Palanca, ApalancaFest",
-    academia: "Ingeniería de Sistemas e Informática @ UPB",
-  },
-  enfoque: ["Full-Stack", "CI/CD & DevOps", "Mobile con Flutter", "Producto & Marketing"],
-  voluntariado: ["Líderes UPB 💛", "Misiones UPB ❤️"],
-  ladoCreativo: ["Edición de video (CapCut)", "UX con Figma", "Community Management"],
-  datoCurioso: "Implementé todas las estructuras de datos y grafos sin java.util 🧠",
-};
-```
+<img align="right" src="assets/sonic.gif" width="240" alt="Sonic corriendo por Green Hill Zone" />
 
-- 💼 **Tecnoinformática** (casa de software empresarial y financiera): entré como practicante y me quedé en el equipo de planta. Construyo funcionalidades con **Laravel y Vue.js**, trabajamos con **Scrum** y configuro **despliegues automáticos con GitHub Actions (CI/CD)**.
-- 🏆 **Severapp** (marketplace universitario): como **CMO y co-fundador** lidero la estrategia de crecimiento, alianzas y eventos — y también programo en la app con **Flutter, Dart y Firebase**. Ganamos el **1er lugar en La Palanca (ApalancaFest)**, el evento de emprendimiento más importante del oriente colombiano.
-- 🚂 **RailLink**, mi proyecto académico insignia: sistema de gestión de trenes con **arquitectura MVC, persistencia JSON y JUnit 5**, cuyo núcleo —listas, pilas, colas, árboles, tablas hash y **grafos con cálculo de ruta más corta**— está escrito **100% desde cero, sin `java.util`**.
-- 🌱 **Líderes UPB** y **Misiones UPB**: liderazgo con propósito, comunicación y transformación social.
-- 🎬 Mi lado creativo: **edición de video, diseño UX en Figma y gestión de redes** — creo que un buen ingeniero también entiende el producto y sabe comunicarlo.
+**Ingeniero en formación, desarrollador en ejercicio y creativo por naturaleza.**
+
+Estudio **Ingeniería de Sistemas e Informática** en la **UPB** mientras trabajo en la
+industria real: software empresarial y financiero de día, una startup ganadora por las
+tardes, y edición de video cuando el editor de código descansa.
+
+Mi tesis personal: *un buen ingeniero entiende el producto tanto como el código.*
+
+<br clear="right"/>
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+### 💼 Ingeniería
+**Full-Stack Jr. @ Tecnoinformática**
+
+Casa de software empresarial y financiera. Entré como practicante y me quedé en el equipo de planta.
+
+`Laravel` `Vue.js` `Scrum`
+`CI/CD con GitHub Actions`
+
+</td>
+<td width="33%" valign="top">
+
+### 📈 Producto & Marketing
+**CMO & Co-fundador @ Severapp**
+
+Marketplace universitario — 🥇 **1er lugar en La Palanca (ApalancaFest)**, Cámara de Comercio de Bucaramanga.
+
+`Flutter` `Dart` `Firebase`
+`Growth` `Alianzas` `Eventos`
+
+</td>
+<td width="33%" valign="top">
+
+### 🤝 Liderazgo & Creatividad
+**Líderes UPB · Misiones UPB**
+
+Liderazgo con propósito, comunicación y transformación social. Y mi lado audiovisual:
+
+`Edición de video` `CapCut`
+`UX con Figma` `Community Mgmt`
+
+</td>
+</tr>
+</table>
+
+> 🧠 **Dato curioso:** en [RailLink](https://github.com/Dabji/RailLink) implementé listas, pilas, colas, árboles, tablas hash y grafos con ruta más corta **100% desde cero, sin `java.util`** — con MVC, JSON y JUnit 5.
 
 ---
 
@@ -49,113 +70,96 @@ const juan = {
 
 <div align="center">
 
-### Lenguajes
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&labelColor=0d1117" /> <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white&labelColor=0d1117" />
-
-### Frontend
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/SASS-CC6699?style=for-the-badge&logo=sass&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white&labelColor=0d1117" />
-
-### Backend
-<img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black&labelColor=0d1117" />
-
-### Móvil
-<img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white&labelColor=0d1117" />
-
-### Bases de Datos
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Sequelize-52B0E7?style=for-the-badge&logo=sequelize&logoColor=white&labelColor=0d1117" />
-
-### DevOps & Cloud
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&labelColor=0d1117" />
-
-### Testing & Calidad
-<img src="https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white&labelColor=0d1117" />
-
-### Diseño & Creativo
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/CapCut-000000?style=for-the-badge&logo=capcut&logoColor=white&labelColor=0d1117" /> <img src="https://img.shields.io/badge/Scrum-7AA2F7?style=for-the-badge&labelColor=0d1117" />
+<table>
+<tr>
+<td align="right"><b>💻 Lenguajes</b></td>
+<td>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="42" title="TypeScript" alt="TypeScript" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="42" title="JavaScript" alt="JavaScript" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="42" title="PHP" alt="PHP" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="42" title="Java" alt="Java" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="42" title="Python" alt="Python" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" width="42" title="Dart" alt="Dart" />
+</td>
+</tr>
+<tr>
+<td align="right"><b>🎨 Frontend</b></td>
+<td>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="42" title="React" alt="React" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="42" title="Vue.js" alt="Vue.js" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" width="42" title="Vite" alt="Vite" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="42" title="TailwindCSS" alt="TailwindCSS" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="42" title="SASS" alt="SASS" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="42" title="HTML5" alt="HTML5" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="42" title="CSS3" alt="CSS3" />
+</td>
+</tr>
+<tr>
+<td align="right"><b>⚙️ Backend & APIs</b></td>
+<td>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" width="42" title="Laravel" alt="Laravel" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="42" title="Node.js" alt="Node.js" />&nbsp;
+<img src="https://cdn.simpleicons.org/express/white" width="42" title="Express" alt="Express" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="42" title="FastAPI" alt="FastAPI" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="42" title="Spring Boot" alt="Spring Boot" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" width="42" title="Swagger / OpenAPI" alt="Swagger" />
+</td>
+</tr>
+<tr>
+<td align="right"><b>📱 Móvil</b></td>
+<td>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" width="42" title="Flutter" alt="Flutter" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="42" title="Kotlin" alt="Kotlin" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetpackcompose/jetpackcompose-original.svg" width="42" title="Jetpack Compose" alt="Jetpack Compose" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" width="42" title="Firebase" alt="Firebase" />
+</td>
+</tr>
+<tr>
+<td align="right"><b>🗄️ Bases de Datos</b></td>
+<td>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="42" title="PostgreSQL" alt="PostgreSQL" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="42" title="MySQL" alt="MySQL" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" width="42" title="Firestore" alt="Firestore" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg" width="42" title="Prisma" alt="Prisma" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg" width="42" title="Sequelize" alt="Sequelize" />
+</td>
+</tr>
+<tr>
+<td align="right"><b>☁️ Cloud & DevOps</b></td>
+<td>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="42" title="Docker" alt="Docker" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" width="42" title="Kubernetes" alt="Kubernetes" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" width="42" title="Microsoft Azure" alt="Azure" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" width="42" title="Google Cloud Platform" alt="GCP" />&nbsp;
+<img src="https://skillicons.dev/icons?i=aws" width="42" title="AWS" alt="AWS" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" width="42" title="Terraform" alt="Terraform" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" width="42" title="GitHub Actions" alt="GitHub Actions" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width="42" title="Nginx" alt="Nginx" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="42" title="Git" alt="Git" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" width="42" title="Maven" alt="Maven" />
+</td>
+</tr>
+<tr>
+<td align="right"><b>✅ Testing</b></td>
+<td>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitest/vitest-original.svg" width="42" title="Vitest" alt="Vitest" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" width="42" title="Jest" alt="Jest" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-original.svg" width="42" title="Pytest" alt="Pytest" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-original.svg" width="42" title="JUnit 5" alt="JUnit 5" />
+</td>
+</tr>
+<tr>
+<td align="right"><b>🧰 Diseño & Tools</b></td>
+<td>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="42" title="Figma" alt="Figma" />&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" width="42" title="Postman" alt="Postman" />&nbsp;
+<img src="https://img.shields.io/badge/CapCut-000000?style=for-the-badge&labelColor=0d1117" height="28" title="CapCut" alt="CapCut" />&nbsp;
+<img src="https://img.shields.io/badge/Scrum-7AA2F7?style=for-the-badge&labelColor=0d1117" height="28" title="Scrum" alt="Scrum" />
+</td>
+</tr>
+</table>
 
 </div>
-
----
-
-## 📜 Certificaciones (60+)
-
-> Formación continua, principalmente en **Código Facilito** y Microsoft. Haz clic en cada categoría para expandir 👇
-
-<details>
-<summary><b>☁️ Cloud & DevOps</b> &nbsp;<img src="https://img.shields.io/badge/10-7aa2f7?style=flat-square&labelColor=0d1117" align="center" /></summary>
-<br/>
-
-| | |
-|---|---|
-| 🐳 Curso Profesional de Docker | ☸️ Curso Profesional de Kubernetes |
-| ⚙️ GitHub Actions | 🐙 Curso a fondo de GitHub |
-| 🏗️ Infraestructura como Código con Terraform | ☁️ Fundamentos de Azure |
-| 🚀 Despliegue de aplicaciones web en Azure | 🖥️ Curso Profesional de Deploy en Servidores |
-| 🔄 Introducción a DevOps: Bases y Conceptos | 🛤️ Ruta de Azure Profesional |
-
-</details>
-
-<details>
-<summary><b>🧠 Data Science, AI & MLOps</b> &nbsp;<img src="https://img.shields.io/badge/16-bb9af7?style=flat-square&labelColor=0d1117" align="center" /></summary>
-<br/>
-
-| | |
-|---|---|
-| 🤖 Machine Learning con ScikitLearn | 🧪 MLOps |
-| 🎯 Introducción a Machine Learning | 🛤️ Ruta de Machine Learning |
-| 📊 Bases y conceptos de Ciencia de Datos | 🏭 Proyecto de Ingeniería de Datos |
-| 🐍 Procesos de ETL Modernos con Python | 🔢 Masterclass de NumPy |
-| 📈 Power BI | ⚡ Power Apps |
-| 📉 Excel Avanzado, Análisis y Visualización | 🧵 Microsoft Fabric |
-| 🤝 Copilot Studio | 💬 Microsoft Copilot Chat |
-| 👨‍💻 VS Code y GitHub Copilot | 🧠 Apps de IA con C# y Azure |
-
-</details>
-
-<details>
-<summary><b>⚙️ Backend Development</b> &nbsp;<img src="https://img.shields.io/badge/17-7dcfff?style=flat-square&labelColor=0d1117" align="center" /></summary>
-<br/>
-
-| | |
-|---|---|
-| 🐘 Laravel Profesional | 🐘 PHP 8 Profesional |
-| 🍃 Spring Framework y Spring Boot | ☁️ Desarrollo Java y Spring en la nube |
-| ⚡ Programación Reactiva con Java | 🟢 Node.js Profesional |
-| 🎸 Masterclass de Django | 🛤️ Ruta Backend con Python y Django |
-| 🗄️ Fundamentos de SQL | 🛤️ Ruta de Bases de Datos |
-| 🐍 Bases de datos con Python | 🐍 Estructuras de Datos en Python |
-| 🐍 Archivos, Excepciones y Type Hints en Python | 🐍 Ejercicios de POO con Python |
-| ⚙️ C Profesional | ➕ C++ Profesional |
-| 💧 Elixir Profesional | |
-
-</details>
-
-<details>
-<summary><b>🎨 Frontend & Mobile</b> &nbsp;<img src="https://img.shields.io/badge/12-ff9e64?style=flat-square&labelColor=0d1117" align="center" /></summary>
-<br/>
-
-| | |
-|---|---|
-| ⚛️ React Profesional | 🟨 JavaScript Profesional |
-| 🔷 TypeScript Profesional | 🛤️ Ruta Fullstack con JavaScript |
-| 🛤️ Ruta de Fundamentos de Frontend Moderno | 🎨 CSS |
-| 💅 SASS a fondo | 🌬️ Tailwind CSS a fondo |
-| 📐 Flexbox y Grid a fondo | 💙 Flutter Profesional |
-| 🤖 Android con Jetpack Compose | 🟣 Kotlin Básico |
-
-</details>
-
-<details>
-<summary><b>📐 Arquitectura & Metodologías</b> &nbsp;<img src="https://img.shields.io/badge/5-9ece6a?style=flat-square&labelColor=0d1117" align="center" /></summary>
-<br/>
-
-| | |
-|---|---|
-| 🏛️ Fundamentos de Arquitectura de Software | 🧩 Metodologías para Solución de Problemas |
-| 🔍 Testing Estático | ✅ Pruebas Unitarias con Python |
-| 🌿 Git Profesional | |
-
-</details>
 
 ---
 
@@ -181,7 +185,7 @@ const juan = {
 
 ## ⚡ Actividad reciente
 
-<!-- Esta sección se actualiza sola cada 3 días con GitHub Actions -->
+<!-- Sección auto-generada cada 3 días por update-readme.yml — no editar a mano -->
 <!--START_SECTION:activity-->
 1. ℹ️ Labeled issue [#305](https://github.com/Dabji/Simulador-Credito-UPB/issues/305) in [Dabji/Simulador-Credito-UPB](https://github.com/Dabji/Simulador-Credito-UPB)
 2. ℹ️ Labeled issue [#305](https://github.com/Dabji/Simulador-Credito-UPB/issues/305) in [Dabji/Simulador-Credito-UPB](https://github.com/Dabji/Simulador-Credito-UPB)
@@ -194,75 +198,61 @@ const juan = {
 
 ## 📌 Proyectos Destacados
 
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="50%">
-<a href="https://github.com/Dabji/RailLink">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=RailLink&theme=tokyonight&hide_border=true&bg_color=0d1117" />
-</a>
-<br/><sub>🚂 Java MVC + JUnit 5 — Grafos y estructuras de datos <b>100% desde cero, sin java.util</b></sub>
-</td>
-<td align="center" width="50%">
-<a href="https://github.com/Dabji/Simulador-Credito-UPB">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Simulador-Credito-UPB&theme=tokyonight&hide_border=true&bg_color=0d1117" />
-</a>
-<br/><sub>💰 React + Node.js + Clean Architecture + API RESTful</sub>
-</td>
-</tr>
-<tr>
-<td align="center" width="50%">
-<a href="https://github.com/Dabji/Hegemony-Linear">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Hegemony-Linear&theme=tokyonight&hide_border=true&bg_color=0d1117" />
-</a>
-<br/><sub>🎲 React + FastAPI + Métodos numéricos (Newton-Raphson)</sub>
-</td>
-<td align="center" width="50%">
-<a href="https://github.com/Dabji/Veterinaria">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Veterinaria&theme=tokyonight&hide_border=true&bg_color=0d1117" />
-</a>
-<br/><sub>🐾 JavaFX + JDBC + PostgreSQL — Sistema de gestión clínica</sub>
-</td>
-</tr>
-<tr>
-<td align="center" colspan="2">
-<a href="https://github.com/Dabji/Turismo-Cali-UPB">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Turismo-Cali-UPB&theme=tokyonight&hide_border=true&bg_color=0d1117" />
-</a>
-<br/><sub>🌊 Express + TypeScript + Prisma — Gestión turística</sub>
-</td>
-</tr>
-</table>
-
-</div>
+<!-- Sección auto-generada cada 3 días por update-readme.yml — no editar a mano -->
+<!--START_SECTION:projects-->
+<!--END_SECTION:projects-->
 
 ---
 
-## 🐍 Contribuciones
+## 🦔 Contribuciones · Modo Sonic
 
 <div align="center">
+
+<sub>💍 Cada anillo dorado es una contribución. Gotta go fast.</sub>
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Dabji/Dabji/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Dabji/Dabji/output/github-snake.svg" />
-  <img alt="snake animation" src="https://raw.githubusercontent.com/Dabji/Dabji/output/github-snake-dark.svg" width="95%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Dabji/Dabji/output/sonic-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Dabji/Dabji/output/sonic-light.svg" />
+  <img alt="Animación de contribuciones estilo Sonic" src="https://raw.githubusercontent.com/Dabji/Dabji/output/sonic-dark.svg" width="95%" />
 </picture>
+
 </div>
 
 ---
 
-## 📫 Contacto
+## 📫 Conectemos
 
 <div align="center">
 
-<a href="https://www.linkedin.com/in/juanordo%C3%B1ezf"><img src="https://img.shields.io/badge/LinkedIn-juanordo%C3%B1ezf-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" /></a>
-<a href="mailto:juanordo1403@gmail.com"><img src="https://img.shields.io/badge/Email-juanordo1403%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" /></a>
-<a href="https://github.com/Dabji"><img src="https://img.shields.io/badge/GitHub-Dabji-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" /></a>
+<a href="https://www.linkedin.com/in/juanordo%C3%B1ezf">
+  <img src="https://img.shields.io/badge/LinkedIn-Juan%20David%20Ordo%C3%B1ez-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0d1117" />
+</a>
+&nbsp;
+<a href="mailto:juanordo1403@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-juanordo1403-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" />
+</a>
+&nbsp;
+<a href="https://www.instagram.com/why_ordoo/">
+  <img src="https://img.shields.io/badge/Instagram-%40why__ordoo-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=0d1117" />
+</a>
+&nbsp;
+<img src="https://img.shields.io/badge/Discord-dabji.-5865F2?style=for-the-badge&logo=discord&logoColor=white&labelColor=0d1117" />
 
 <br/><br/>
 
-> *"Un buen ingeniero no solo sabe programar: entiende el producto, se comunica bien y sabe mostrar su valor."*
+✦ &nbsp;─────────────────────────────────────────&nbsp; ✦
+
+<br/>
+
+### *“Un buen ingeniero no solo sabe programar:*
+### *entiende el producto, se comunica bien y sabe mostrar su valor.”*
+
+<sub>— Juan David Ordóñez Ferreira</sub>
+
+<br/>
+
+✦ &nbsp;─────────────────────────────────────────&nbsp; ✦
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:7aa2f7,50:1a1b27,100:0d1117&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:7aa2f7,50:bb9af7,100:0d1117&section=footer&text=Gracias%20por%20la%20visita%20%F0%9F%91%8B&fontColor=c0caf5&fontSize=24&fontAlignY=75" width="100%" />

@@ -1,0 +1,138 @@
+name: 🔄 Actualizar README (actividad + proyectos)
+
+on:
+  schedule:
+    # Cada 3 días a las 06:00 UTC (01:00 Colombia)
+    - cron: "0 6 */3 * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/update-readme.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generar actividad reciente y proyectos por estrellas
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'EOF'
+          import json, os, re, urllib.request
+          from datetime import datetime, timezone
+
+          USER = "Dabji"
+          TOKEN = os.environ["GITHUB_TOKEN"]
+
+          def api(path):
+              req = urllib.request.Request(
+                  f"https://api.github.com{path}",
+                  headers={"Authorization": f"Bearer {TOKEN}",
+                           "Accept": "application/vnd.github+json"})
+              with urllib.request.urlopen(req) as r:
+                  return json.load(r)
+
+          def hace(iso):
+              dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+              delta = datetime.now(timezone.utc) - dt
+              if delta.days >= 30: return f"hace {delta.days // 30} mes(es)"
+              if delta.days >= 1:  return f"hace {delta.days} día(s)"
+              h = delta.seconds // 3600
+              return f"hace {h} hora(s)" if h else "hace minutos"
+
+          # ── Actividad reciente ─────────────────────────────────────────
+          eventos = api(f"/users/{USER}/events/public?per_page=60")
+          filas, vistos = [], set()
+          for e in eventos:
+              repo = e["repo"]["name"]
+              url = f"https://github.com/{repo}"
+              t, p = e["type"], e["payload"]
+              if t == "PushEvent":
+                  n = len(p.get("commits", []))
+                  if not n: continue
+                  txt = (f"⚡", f"Hizo push de **{n} commit{'s' if n > 1 else ''}** en [`{repo}`]({url})")
+              elif t == "PullRequestEvent":
+                  pr = p["pull_request"]
+                  if p["action"] == "closed" and pr.get("merged"):
+                      txt = ("🎉", f"Mergeó el PR [#{pr['number']}]({pr['html_url']}) en [`{repo}`]({url})")
+                  elif p["action"] == "opened":
+                      txt = ("🔀", f"Abrió el PR [#{pr['number']}]({pr['html_url']}) en [`{repo}`]({url})")
+                  else: continue
+              elif t == "IssuesEvent" and p["action"] in ("opened", "closed"):
+                  emoji = "🐛" if p["action"] == "opened" else "✅"
+                  verbo = "Abrió" if p["action"] == "opened" else "Cerró"
+                  txt = (emoji, f"{verbo} el issue [#{p['issue']['number']}]({p['issue']['html_url']}) en [`{repo}`]({url})")
+              elif t == "CreateEvent" and p.get("ref_type") == "repository":
+                  txt = ("🚀", f"Creó el repositorio [`{repo}`]({url})")
+              elif t == "ReleaseEvent" and p["action"] == "published":
+                  txt = ("📦", f"Publicó la release [{p['release']['tag_name']}]({p['release']['html_url']}) en [`{repo}`]({url})")
+              elif t == "WatchEvent":
+                  txt = ("⭐", f"Le dio una estrella a [`{repo}`]({url})")
+              elif t == "ForkEvent":
+                  txt = ("🍴", f"Hizo fork de [`{repo}`]({url})")
+              elif t == "PublicEvent":
+                  txt = ("🌍", f"Hizo público [`{repo}`]({url})")
+              else:
+                  continue
+              clave = (txt[1],)
+              if clave in vistos: continue
+              vistos.add(clave)
+              filas.append(f"| {txt[0]} | {txt[1]} | 🕓 *{hace(e['created_at'])}* |")
+              if len(filas) >= 8: break
+
+          actividad = "\n".join([
+              '<div align="center">', "",
+              "| | 🔥 Últimos movimientos | |",
+              "|:---:|:----------------------|:---:|",
+              *filas, "", "</div>",
+          ]) if filas else "_Sin actividad pública reciente_"
+
+          # ── Proyectos por estrellas ────────────────────────────────────
+          repos = api(f"/users/{USER}/repos?per_page=100&type=owner")
+          repos = [r for r in repos if not r["fork"] and r["name"].lower() != USER.lower()]
+          repos.sort(key=lambda r: r["pushed_at"], reverse=True)   # desempate: más activo primero
+          repos.sort(key=lambda r: r["stargazers_count"], reverse=True)
+          top = repos[:6]
+
+          def tarjeta(r):
+              pin = (f"https://github-readme-stats.vercel.app/api/pin/?username={USER}"
+                     f"&repo={r['name']}&theme=tokyonight&hide_border=true&bg_color=0d1117")
+              return (f'<td align="center" width="50%">\n'
+                      f'<a href="{r["html_url"]}">\n<img src="{pin}" />\n</a>\n</td>')
+
+          celdas = [tarjeta(r) for r in top]
+          tr = []
+          for i in range(0, len(celdas), 2):
+              fila = celdas[i] if i + 1 >= len(celdas) else celdas[i] + "\n" + celdas[i + 1]
+              tr.append(f"<tr>\n{fila}\n</tr>")
+          proyectos = "\n".join([
+              '<div align="center">', "",
+              "<sub>⭐ Ordenados automáticamente por estrellas y actividad — actualizado cada 3 días</sub>",
+              "", "<table>", *tr, "</table>", "", "</div>",
+          ])
+
+          # ── Inyectar en el README ──────────────────────────────────────
+          with open("README.md", encoding="utf-8") as f:
+              md = f.read()
+          md = re.sub(r"(<!--START_SECTION:activity-->).*?(<!--END_SECTION:activity-->)",
+                      rf"\1\n{actividad}\n\2", md, flags=re.S)
+          md = re.sub(r"(<!--START_SECTION:projects-->).*?(<!--END_SECTION:projects-->)",
+                      rf"\1\n{proyectos}\n\2", md, flags=re.S)
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(md)
+          print(f"Actividad: {len(filas)} eventos · Proyectos: {len(top)}")
+          EOF
+
+      - name: Commit y push si hay cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || (git commit -m "🔄 Auto-update: actividad reciente y proyectos destacados" && git push)

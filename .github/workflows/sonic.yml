@@ -1,16 +1,14 @@
-name: 🐍 Generar Snake de contribuciones
+name: 🦔 Generar Sonic de contribuciones
 
 on:
   schedule:
-    # Cada 3 días a las 05:00 UTC (00:00 Colombia) — cadencia óptima sin saturar la API
+    # Cada 3 días a las 05:00 UTC (00:00 Colombia)
     - cron: "0 5 */3 * *"
   workflow_dispatch:
   push:
     branches: [main]
     paths:
-      # Solo se re-ejecuta en push si cambia este workflow (evita cascadas
-      # cuando metrics.yml o el workflow de actividad commitean a main)
-      - ".github/workflows/snake.yml"
+      - ".github/workflows/sonic.yml"
 
 permissions:
   contents: write
@@ -20,13 +18,14 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - name: Generar animación snake
+      - name: Generar animación estilo Sonic (azul + anillos dorados)
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # La "serpiente" es Sonic (azul) y las contribuciones son anillos (dorados)
           outputs: |
-            dist/github-snake.svg?palette=github-light
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#7aa2f7
+            dist/sonic-light.svg?palette=github-light&color_snake=#1d6ff2&color_dots=#e6f0ff,#ffe97d,#ffd700,#e6b800,#b38f00
+            dist/sonic-dark.svg?palette=github-dark&color_snake=#1d6ff2&color_dots=#161b22,#7d6608,#b8860b,#e6c200,#ffd700
 
       - name: Publicar en la rama output
         uses: crazy-max/ghaction-github-pages@v4
