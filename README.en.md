@@ -249,14 +249,14 @@ Plus my audiovisual side:
 
 | | 🔥 Latest moves | |
 |:---:|:----------------------|:---:|
-| 🐛 | Opened issue [#305](https://github.com/Dabji/Simulador-Credito-UPB/issues/305) in [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *2 day(s) ago* |
-| ⭐ | Starred [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *2 day(s) ago* |
+| ⭐ | Starred [`Dabji/Dabji`](https://github.com/Dabji/Dabji) | 🕓 *2 day(s) ago* |
+| 🐛 | Opened issue [#305](https://github.com/Dabji/Simulador-Credito-UPB/issues/305) in [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *4 day(s) ago* |
+| ⭐ | Starred [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *4 day(s) ago* |
 | 🌍 | Made public [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *4 month(s) ago* |
-| ⭐ | Starred [`Dabji/Turismo-Cali-UPB`](https://github.com/Dabji/Turismo-Cali-UPB) | 🕓 *11 day(s) ago* |
+| ⭐ | Starred [`Dabji/Turismo-Cali-UPB`](https://github.com/Dabji/Turismo-Cali-UPB) | 🕓 *13 day(s) ago* |
 | 🌍 | Made public [`Dabji/Turismo-Cali-UPB`](https://github.com/Dabji/Turismo-Cali-UPB) | 🕓 *4 month(s) ago* |
-| ⭐ | Starred [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *11 day(s) ago* |
-| 📦 | Published release [v1.0.0](https://github.com/Dabji/Hegemony-Linear/releases/tag/v1.0.0) in [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *11 day(s) ago* |
-| ⭐ | Starred [`Dabji/Veterinaria`](https://github.com/Dabji/Veterinaria) | 🕓 *12 day(s) ago* |
+| ⭐ | Starred [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *14 day(s) ago* |
+| 📦 | Published release [v1.0.0](https://github.com/Dabji/Hegemony-Linear/releases/tag/v1.0.0) in [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *14 day(s) ago* |
 
 </div>
 <!--END_SECTION:activity-->
