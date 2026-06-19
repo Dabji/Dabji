@@ -249,14 +249,14 @@ Plus my audiovisual side:
 
 | | 🔥 Latest moves | |
 |:---:|:----------------------|:---:|
-| ⭐ | Starred [`Dabji/Dabji`](https://github.com/Dabji/Dabji) | 🕓 *5 day(s) ago* |
-| 🐛 | Opened issue [#305](https://github.com/Dabji/Simulador-Credito-UPB/issues/305) in [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *7 day(s) ago* |
-| ⭐ | Starred [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *7 day(s) ago* |
+| ⭐ | Starred [`Dabji/Dabji`](https://github.com/Dabji/Dabji) | 🕓 *8 day(s) ago* |
+| 🐛 | Opened issue [#305](https://github.com/Dabji/Simulador-Credito-UPB/issues/305) in [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *10 day(s) ago* |
+| ⭐ | Starred [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *10 day(s) ago* |
 | 🌍 | Made public [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *4 month(s) ago* |
-| ⭐ | Starred [`Dabji/Turismo-Cali-UPB`](https://github.com/Dabji/Turismo-Cali-UPB) | 🕓 *16 day(s) ago* |
+| ⭐ | Starred [`Dabji/Turismo-Cali-UPB`](https://github.com/Dabji/Turismo-Cali-UPB) | 🕓 *19 day(s) ago* |
 | 🌍 | Made public [`Dabji/Turismo-Cali-UPB`](https://github.com/Dabji/Turismo-Cali-UPB) | 🕓 *4 month(s) ago* |
-| ⭐ | Starred [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *17 day(s) ago* |
-| 📦 | Published release [v1.0.0](https://github.com/Dabji/Hegemony-Linear/releases/tag/v1.0.0) in [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *17 day(s) ago* |
+| ⭐ | Starred [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *20 day(s) ago* |
+| 📦 | Published release [v1.0.0](https://github.com/Dabji/Hegemony-Linear/releases/tag/v1.0.0) in [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *20 day(s) ago* |
 
 </div>
 <!--END_SECTION:activity-->
@@ -279,20 +279,20 @@ Plus my audiovisual side:
 </a>
 </td>
 <td align="center" width="50%">
-<a href="https://github.com/Dabji/Simulador-Credito-UPB">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Simulador-Credito-UPB&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+<a href="https://github.com/Dabji/Turismo-Cali-UPB">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Turismo-Cali-UPB&theme=tokyonight&hide_border=true&bg_color=0d1117" />
 </a>
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
-<a href="https://github.com/Dabji/Turismo-Cali-UPB">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Turismo-Cali-UPB&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+<a href="https://github.com/Dabji/Hegemony-Linear">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Hegemony-Linear&theme=tokyonight&hide_border=true&bg_color=0d1117" />
 </a>
 </td>
 <td align="center" width="50%">
-<a href="https://github.com/Dabji/Hegemony-Linear">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Hegemony-Linear&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+<a href="https://github.com/Dabji/Simulador-Credito-UPB">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Simulador-Credito-UPB&theme=tokyonight&hide_border=true&bg_color=0d1117" />
 </a>
 </td>
 </tr>
