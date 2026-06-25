@@ -249,14 +249,14 @@ Plus my audiovisual side:
 
 | | 🔥 Latest moves | |
 |:---:|:----------------------|:---:|
-| ⭐ | Starred [`Dabji/Dabji`](https://github.com/Dabji/Dabji) | 🕓 *11 day(s) ago* |
-| 🐛 | Opened issue [#305](https://github.com/Dabji/Simulador-Credito-UPB/issues/305) in [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *13 day(s) ago* |
-| ⭐ | Starred [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *13 day(s) ago* |
+| ⭐ | Starred [`Dabji/Dabji`](https://github.com/Dabji/Dabji) | 🕓 *14 day(s) ago* |
+| 🐛 | Opened issue [#305](https://github.com/Dabji/Simulador-Credito-UPB/issues/305) in [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *16 day(s) ago* |
+| ⭐ | Starred [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *16 day(s) ago* |
 | 🌍 | Made public [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *4 month(s) ago* |
-| ⭐ | Starred [`Dabji/Turismo-Cali-UPB`](https://github.com/Dabji/Turismo-Cali-UPB) | 🕓 *22 day(s) ago* |
+| ⭐ | Starred [`Dabji/Turismo-Cali-UPB`](https://github.com/Dabji/Turismo-Cali-UPB) | 🕓 *25 day(s) ago* |
 | 🌍 | Made public [`Dabji/Turismo-Cali-UPB`](https://github.com/Dabji/Turismo-Cali-UPB) | 🕓 *4 month(s) ago* |
-| ⭐ | Starred [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *23 day(s) ago* |
-| 📦 | Published release [v1.0.0](https://github.com/Dabji/Hegemony-Linear/releases/tag/v1.0.0) in [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *23 day(s) ago* |
+| ⭐ | Starred [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *26 day(s) ago* |
+| 📦 | Published release [v1.0.0](https://github.com/Dabji/Hegemony-Linear/releases/tag/v1.0.0) in [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *26 day(s) ago* |
 
 </div>
 <!--END_SECTION:activity-->
@@ -300,6 +300,11 @@ Plus my audiovisual side:
 <td align="center" width="50%">
 <a href="https://github.com/Dabji/RailLink">
 <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=RailLink&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+</a>
+</td>
+<td align="center" width="50%">
+<a href="https://github.com/Dabji/apros-react-todo">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=apros-react-todo&theme=tokyonight&hide_border=true&bg_color=0d1117" />
 </a>
 </td>
 </tr>
