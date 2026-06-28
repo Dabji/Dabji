@@ -249,14 +249,14 @@ Y mi lado audiovisual:
 
 | | 🔥 Últimos movimientos | |
 |:---:|:----------------------|:---:|
-| ⭐ | Le dio una estrella a [`Dabji/Dabji`](https://github.com/Dabji/Dabji) | 🕓 *hace 14 día(s)* |
-| 🐛 | Abrió el issue [#305](https://github.com/Dabji/Simulador-Credito-UPB/issues/305) en [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *hace 16 día(s)* |
-| ⭐ | Le dio una estrella a [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *hace 16 día(s)* |
-| 🌍 | Hizo público [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *hace 4 mes(es)* |
-| ⭐ | Le dio una estrella a [`Dabji/Turismo-Cali-UPB`](https://github.com/Dabji/Turismo-Cali-UPB) | 🕓 *hace 25 día(s)* |
-| 🌍 | Hizo público [`Dabji/Turismo-Cali-UPB`](https://github.com/Dabji/Turismo-Cali-UPB) | 🕓 *hace 4 mes(es)* |
-| ⭐ | Le dio una estrella a [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *hace 26 día(s)* |
-| 📦 | Publicó la release [v1.0.0](https://github.com/Dabji/Hegemony-Linear/releases/tag/v1.0.0) en [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *hace 26 día(s)* |
+| ⭐ | Le dio una estrella a [`Dabji/Dabji`](https://github.com/Dabji/Dabji) | 🕓 *hace 17 día(s)* |
+| 🐛 | Abrió el issue [#305](https://github.com/Dabji/Simulador-Credito-UPB/issues/305) en [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *hace 19 día(s)* |
+| ⭐ | Le dio una estrella a [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *hace 19 día(s)* |
+| 🌍 | Hizo público [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *hace 5 mes(es)* |
+| ⭐ | Le dio una estrella a [`Dabji/Turismo-Cali-UPB`](https://github.com/Dabji/Turismo-Cali-UPB) | 🕓 *hace 28 día(s)* |
+| 🌍 | Hizo público [`Dabji/Turismo-Cali-UPB`](https://github.com/Dabji/Turismo-Cali-UPB) | 🕓 *hace 5 mes(es)* |
+| ⭐ | Le dio una estrella a [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *hace 29 día(s)* |
+| 📦 | Publicó la release [v1.0.0](https://github.com/Dabji/Hegemony-Linear/releases/tag/v1.0.0) en [`Dabji/Hegemony-Linear`](https://github.com/Dabji/Hegemony-Linear) | 🕓 *hace 29 día(s)* |
 
 </div>
 <!--END_SECTION:activity-->
