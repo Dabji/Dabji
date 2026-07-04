@@ -249,9 +249,9 @@ Plus my audiovisual side:
 
 | | 🔥 Latest moves | |
 |:---:|:----------------------|:---:|
-| ⭐ | Starred [`Dabji/Dabji`](https://github.com/Dabji/Dabji) | 🕓 *20 day(s) ago* |
-| 🐛 | Opened issue [#305](https://github.com/Dabji/Simulador-Credito-UPB/issues/305) in [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *22 day(s) ago* |
-| ⭐ | Starred [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *22 day(s) ago* |
+| ⭐ | Starred [`Dabji/Dabji`](https://github.com/Dabji/Dabji) | 🕓 *23 day(s) ago* |
+| 🐛 | Opened issue [#305](https://github.com/Dabji/Simulador-Credito-UPB/issues/305) in [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *25 day(s) ago* |
+| ⭐ | Starred [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *25 day(s) ago* |
 | 🌍 | Made public [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *5 month(s) ago* |
 
 </div>
