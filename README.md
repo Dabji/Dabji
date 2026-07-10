@@ -249,10 +249,7 @@ Y mi lado audiovisual:
 
 | | 🔥 Últimos movimientos | |
 |:---:|:----------------------|:---:|
-| ⭐ | Le dio una estrella a [`Dabji/Dabji`](https://github.com/Dabji/Dabji) | 🕓 *hace 26 día(s)* |
-| 🐛 | Abrió el issue [#305](https://github.com/Dabji/Simulador-Credito-UPB/issues/305) en [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *hace 28 día(s)* |
-| ⭐ | Le dio una estrella a [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *hace 28 día(s)* |
-| 🌍 | Hizo público [`Dabji/Simulador-Credito-UPB`](https://github.com/Dabji/Simulador-Credito-UPB) | 🕓 *hace 5 mes(es)* |
+| ⭐ | Le dio una estrella a [`Dabji/Dabji`](https://github.com/Dabji/Dabji) | 🕓 *hace 29 día(s)* |
 
 </div>
 <!--END_SECTION:activity-->
