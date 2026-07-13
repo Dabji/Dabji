@@ -245,13 +245,7 @@ Plus my audiovisual side:
 
 <!-- Auto-generated every 3 days by update-readme.yml — do not edit by hand -->
 <!--START_SECTION:activity-->
-<div align="center">
-
-| | 🔥 Latest moves | |
-|:---:|:----------------------|:---:|
-| ⭐ | Starred [`Dabji/Dabji`](https://github.com/Dabji/Dabji) | 🕓 *29 day(s) ago* |
-
-</div>
+_No recent public activity_
 <!--END_SECTION:activity-->
 
 ---

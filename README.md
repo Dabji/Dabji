@@ -245,13 +245,7 @@ Y mi lado audiovisual:
 
 <!-- Sección auto-generada cada 3 días por update-readme.yml — no editar a mano -->
 <!--START_SECTION:activity-->
-<div align="center">
-
-| | 🔥 Últimos movimientos | |
-|:---:|:----------------------|:---:|
-| ⭐ | Le dio una estrella a [`Dabji/Dabji`](https://github.com/Dabji/Dabji) | 🕓 *hace 29 día(s)* |
-
-</div>
+_Sin actividad pública reciente_
 <!--END_SECTION:activity-->
 
 ---
