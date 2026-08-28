@@ -266,15 +266,15 @@ _No recent public activity_
 </a>
 </td>
 <td align="center" width="50%">
-<a href="https://github.com/Dabji/Turismo-Cali-UPB">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Turismo-Cali-UPB&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+<a href="https://github.com/Dabji/Hegemony-Linear">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Hegemony-Linear&theme=tokyonight&hide_border=true&bg_color=0d1117" />
 </a>
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
-<a href="https://github.com/Dabji/Hegemony-Linear">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Hegemony-Linear&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+<a href="https://github.com/Dabji/Turismo-Cali-UPB">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Turismo-Cali-UPB&theme=tokyonight&hide_border=true&bg_color=0d1117" />
 </a>
 </td>
 <td align="center" width="50%">
@@ -290,8 +290,8 @@ _No recent public activity_
 </a>
 </td>
 <td align="center" width="50%">
-<a href="https://github.com/Dabji/apros-react-todo">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=apros-react-todo&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+<a href="https://github.com/Dabji/PixelPets-UPB">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=PixelPets-UPB&theme=tokyonight&hide_border=true&bg_color=0d1117" />
 </a>
 </td>
 </tr>
