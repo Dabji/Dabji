@@ -245,7 +245,13 @@ Y mi lado audiovisual:
 
 <!-- Sección auto-generada cada 3 días por update-readme.yml — no editar a mano -->
 <!--START_SECTION:activity-->
-_Sin actividad pública reciente_
+<div align="center">
+
+| | 🔥 Últimos movimientos | |
+|:---:|:----------------------|:---:|
+| ⭐ | Le dio una estrella a [`elementalsouls/Claude-BugHunter`](https://github.com/elementalsouls/Claude-BugHunter) | 🕓 *hace 1 día(s)* |
+
+</div>
 <!--END_SECTION:activity-->
 
 ---
@@ -266,20 +272,20 @@ _Sin actividad pública reciente_
 </a>
 </td>
 <td align="center" width="50%">
-<a href="https://github.com/Dabji/Simulador-Credito-UPB">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Simulador-Credito-UPB&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+<a href="https://github.com/Dabji/Hegemony-Linear">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Hegemony-Linear&theme=tokyonight&hide_border=true&bg_color=0d1117" />
 </a>
 </td>
 </tr>
 <tr>
 <td align="center" width="50%">
-<a href="https://github.com/Dabji/Hegemony-Linear">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Hegemony-Linear&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+<a href="https://github.com/Dabji/Turismo-Cali-UPB">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Turismo-Cali-UPB&theme=tokyonight&hide_border=true&bg_color=0d1117" />
 </a>
 </td>
 <td align="center" width="50%">
-<a href="https://github.com/Dabji/Turismo-Cali-UPB">
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Turismo-Cali-UPB&theme=tokyonight&hide_border=true&bg_color=0d1117" />
+<a href="https://github.com/Dabji/Simulador-Credito-UPB">
+<img src="https://github-readme-stats.vercel.app/api/pin/?username=Dabji&repo=Simulador-Credito-UPB&theme=tokyonight&hide_border=true&bg_color=0d1117" />
 </a>
 </td>
 </tr>

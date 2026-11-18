@@ -25,7 +25,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 - <<'EOF'
-          import json, os, re, urllib.request
+          import json, os, re, urllib.parse, urllib.error, urllib.request
           from datetime import datetime, timezone
 
           USER = "Dabji"
@@ -36,11 +36,22 @@ jobs:
                   f"https://api.github.com{path}",
                   headers={"Authorization": f"Bearer {TOKEN}",
                            "Accept": "application/vnd.github+json"})
-              with urllib.request.urlopen(req) as r:
-                  return json.load(r)
+              try:
+                  with urllib.request.urlopen(req, timeout=20) as r:
+                      data = json.load(r)
+              except urllib.error.HTTPError as e:
+                  raise RuntimeError(f"GitHub API respondió {e.code} para {path}") from e
+              except urllib.error.URLError as e:
+                  raise RuntimeError(f"No se pudo conectar a GitHub API: {e.reason}") from e
+              if isinstance(data, dict) and data.get("message"):
+                  raise RuntimeError(f"GitHub API error para {path}: {data['message']}")
+              return data
 
           def hace(iso, lang):
-              dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+              try:
+                  dt = datetime.fromisoformat(str(iso).replace("Z", "+00:00"))
+              except (TypeError, ValueError):
+                  return "fecha desconocida" if lang == "es" else "unknown date"
               d = datetime.now(timezone.utc) - dt
               if lang == "es":
                   if d.days >= 30: return f"hace {d.days // 30} mes(es)"
@@ -51,6 +62,11 @@ jobs:
               if d.days >= 1:  return f"{d.days} day(s) ago"
               h = d.seconds // 3600
               return f"{h} hour(s) ago" if h else "minutes ago"
+
+          def html_url(obj, fallback):
+              if isinstance(obj, dict):
+                  return obj.get("html_url") or fallback
+              return fallback
 
           T = {
               "es": {"push": "Hizo push de **{n} commit{s}** en", "merge": "Mergeó el PR",
@@ -68,33 +84,64 @@ jobs:
           }
 
           eventos = api(f"/users/{USER}/events/public?per_page=60")
+          if not isinstance(eventos, list):
+              eventos = []
 
           def actividad(lang):
               t = T[lang]
               filas, vistos = [], set()
               for e in eventos:
-                  repo = e["repo"]["name"]
+                  if not isinstance(e, dict):
+                      continue
+                  repo_data = e.get("repo") or {}
+                  repo = repo_data.get("name") if isinstance(repo_data, dict) else None
+                  created_at = e.get("created_at")
+                  if not repo or not created_at:
+                      continue
                   url = f"https://github.com/{repo}"
-                  ty, p = e["type"], e["payload"]
+                  ty, p = e.get("type"), e.get("payload") or {}
+                  if not isinstance(p, dict):
+                      continue
                   if ty == "PushEvent":
-                      n = len(p.get("commits", []))
+                      commits = p.get("commits") or []
+                      n = len(commits) if isinstance(commits, list) else 0
                       if not n: continue
                       linea = ("⚡", t["push"].format(n=n, s="s" if n > 1 else "") + f" [`{repo}`]({url})")
                   elif ty == "PullRequestEvent":
-                      pr = p["pull_request"]
-                      if p["action"] == "closed" and pr.get("merged"):
-                          linea = ("🎉", f"{t['merge']} [#{pr['number']}]({pr['html_url']}){t['en']} [`{repo}`]({url})")
-                      elif p["action"] == "opened":
-                          linea = ("🔀", f"{t['openpr']} [#{pr['number']}]({pr['html_url']}){t['en']} [`{repo}`]({url})")
+                      pr = p.get("pull_request") or {}
+                      if not isinstance(pr, dict):
+                          continue
+                      number = pr.get("number")
+                      if not number:
+                          continue
+                      pr_url = html_url(pr, f"{url}/pull/{number}")
+                      if p.get("action") == "closed" and pr.get("merged"):
+                          linea = ("🎉", f"{t['merge']} [#{number}]({pr_url}){t['en']} [`{repo}`]({url})")
+                      elif p.get("action") == "opened":
+                          linea = ("🔀", f"{t['openpr']} [#{number}]({pr_url}){t['en']} [`{repo}`]({url})")
                       else: continue
-                  elif ty == "IssuesEvent" and p["action"] in ("opened", "closed"):
+                  elif ty == "IssuesEvent" and p.get("action") in ("opened", "closed"):
+                      issue = p.get("issue") or {}
+                      if not isinstance(issue, dict):
+                          continue
+                      number = issue.get("number")
+                      if not number:
+                          continue
                       k = "openissue" if p["action"] == "opened" else "closeissue"
                       emoji = "🐛" if p["action"] == "opened" else "✅"
-                      linea = (emoji, f"{t[k]} [#{p['issue']['number']}]({p['issue']['html_url']}){t['en']} [`{repo}`]({url})")
+                      issue_url = html_url(issue, f"{url}/issues/{number}")
+                      linea = (emoji, f"{t[k]} [#{number}]({issue_url}){t['en']} [`{repo}`]({url})")
                   elif ty == "CreateEvent" and p.get("ref_type") == "repository":
                       linea = ("🚀", f"{t['repo']} [`{repo}`]({url})")
-                  elif ty == "ReleaseEvent" and p["action"] == "published":
-                      linea = ("📦", f"{t['release']} [{p['release']['tag_name']}]({p['release']['html_url']}){t['en']} [`{repo}`]({url})")
+                  elif ty == "ReleaseEvent" and p.get("action") == "published":
+                      release = p.get("release") or {}
+                      if not isinstance(release, dict):
+                          continue
+                      tag = release.get("tag_name")
+                      if not tag:
+                          continue
+                      release_url = html_url(release, f"{url}/releases/tag/{urllib.parse.quote(str(tag), safe='')}")
+                      linea = ("📦", f"{t['release']} [{tag}]({release_url}){t['en']} [`{repo}`]({url})")
                   elif ty == "WatchEvent":
                       linea = ("⭐", f"{t['star']} [`{repo}`]({url})")
                   elif ty == "ForkEvent":
@@ -105,7 +152,7 @@ jobs:
                       continue
                   if linea[1] in vistos: continue
                   vistos.add(linea[1])
-                  filas.append(f"| {linea[0]} | {linea[1]} | 🕓 *{hace(e['created_at'], lang)}* |")
+                  filas.append(f"| {linea[0]} | {linea[1]} | 🕓 *{hace(created_at, lang)}* |")
                   if len(filas) >= 8: break
               if not filas:
                   return T[lang]["empty"]
@@ -113,18 +160,23 @@ jobs:
                                 "|:---:|:----------------------|:---:|", *filas, "", "</div>"])
 
           repos = api(f"/users/{USER}/repos?per_page=100&type=owner")
-          repos = [r for r in repos if not r["fork"] and r["name"].lower() != USER.lower()]
-          repos.sort(key=lambda r: r["pushed_at"], reverse=True)   # desempate: más activo primero
-          repos.sort(key=lambda r: r["stargazers_count"], reverse=True)
+          repos = [r for r in repos if isinstance(r, dict) and not r.get("fork")
+                   and r.get("name", "").lower() != USER.lower()] if isinstance(repos, list) else []
+          repos.sort(key=lambda r: r.get("pushed_at") or "", reverse=True)   # desempate: más activo primero
+          repos.sort(key=lambda r: r.get("stargazers_count") or 0, reverse=True)
           top = repos[:6]
 
           def proyectos(lang):
               celdas = []
               for r in top:
+                  name = r.get("name")
+                  if not name:
+                      continue
+                  repo_url = html_url(r, f"https://github.com/{USER}/{name}")
                   pin = (f"https://github-readme-stats.vercel.app/api/pin/?username={USER}"
-                         f"&repo={r['name']}&theme=tokyonight&hide_border=true&bg_color=0d1117")
+                         f"&repo={urllib.parse.quote(str(name), safe='')}&theme=tokyonight&hide_border=true&bg_color=0d1117")
                   celdas.append(f'<td align="center" width="50%">\n'
-                                f'<a href="{r["html_url"]}">\n<img src="{pin}" />\n</a>\n</td>')
+                                f'<a href="{repo_url}">\n<img src="{pin}" />\n</a>\n</td>')
               tr = []
               for i in range(0, len(celdas), 2):
                   fila = celdas[i] if i + 1 >= len(celdas) else celdas[i] + "\n" + celdas[i + 1]
