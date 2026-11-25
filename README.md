@@ -249,7 +249,9 @@ Y mi lado audiovisual:
 
 | | 🔥 Últimos movimientos | |
 |:---:|:----------------------|:---:|
-| ⭐ | Le dio una estrella a [`elementalsouls/Claude-BugHunter`](https://github.com/elementalsouls/Claude-BugHunter) | 🕓 *hace 5 día(s)* |
+| 🐛 | Abrió el issue [#109](https://github.com/y5ez3g/facadecode/issues/109) en [`y5ez3g/facadecode`](https://github.com/y5ez3g/facadecode) | 🕓 *hace 2 día(s)* |
+| 🐛 | Abrió el issue [#108](https://github.com/y5ez3g/facadecode/issues/108) en [`y5ez3g/facadecode`](https://github.com/y5ez3g/facadecode) | 🕓 *hace 2 día(s)* |
+| ⭐ | Le dio una estrella a [`elementalsouls/Claude-BugHunter`](https://github.com/elementalsouls/Claude-BugHunter) | 🕓 *hace 8 día(s)* |
 
 </div>
 <!--END_SECTION:activity-->

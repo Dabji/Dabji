@@ -249,7 +249,9 @@ Plus my audiovisual side:
 
 | | 🔥 Latest moves | |
 |:---:|:----------------------|:---:|
-| ⭐ | Starred [`elementalsouls/Claude-BugHunter`](https://github.com/elementalsouls/Claude-BugHunter) | 🕓 *5 day(s) ago* |
+| 🐛 | Opened issue [#109](https://github.com/y5ez3g/facadecode/issues/109) in [`y5ez3g/facadecode`](https://github.com/y5ez3g/facadecode) | 🕓 *2 day(s) ago* |
+| 🐛 | Opened issue [#108](https://github.com/y5ez3g/facadecode/issues/108) in [`y5ez3g/facadecode`](https://github.com/y5ez3g/facadecode) | 🕓 *2 day(s) ago* |
+| ⭐ | Starred [`elementalsouls/Claude-BugHunter`](https://github.com/elementalsouls/Claude-BugHunter) | 🕓 *8 day(s) ago* |
 
 </div>
 <!--END_SECTION:activity-->
